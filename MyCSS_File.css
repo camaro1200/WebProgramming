@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    font-family: Verdana sans-serif;
+    color: red;
+}
+
+section{
+    margin: 20px;
+    padding: 10px;
+    border: 5px solid red;
+}
+
+.info_about_myself h2 {
+    background-image: url("background.jpeg");
+    text-align: left;
+    opacity: 0.8;
+    color: white;
+}
+
+.info_about_myself p
+{
+    text-align: center;
+}
+
+.my_strenghts ul
+{
+    background: #ff9999;
+    padding: 20px;
+}
+
+h2{
+    font-size: large;
+    color: #9779ec;
+}
+
+ul li {
+    background: #ffe5e5;
+    margin: 5px;
+    color: black;
+}
+
+h1 {
+    opacity: 0.8;
+    color: red;
+    text-align: left;
+    border: 2px solid Tomato;
+    padding: 1px;
+    background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
+}
+
+
+
+h3{
+    border-style: groove;
+    border-width: 10px 5px; /* 10px top and bottom, 5px on the sides */
+    border-right-style: solid;
+    border-radius: 5px;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    margin-left: 8px;
+    font-family: verdana;
+    font-size: 20px;
+
+}
+
+/*div {
+    width: 300px;
+    margin: auto;
+    border: 1px solid red;
+}*/
+
+
+

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pavel Shaburv Bio Page</title>
+    <link rel="stylesheet" href="MyCSS_File.css">
+    <script src="Lab5.js"></script>
+</head>
+<body>
+
+<style>
+    @media(min-width: 768px) {
+
+        .container-1{
+            display: flex;
+            /*
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center
+             flex-direction: column;
+             */
+            align-items: stretch;
+            flex-direction: row;
+        }
+
+        .container-2{
+            display: flex;
+            /*
+              justify-content:flex-start ;
+              justify-content:flex-end;
+              justify-content:center;
+              justify-content:space-around;
+             */
+            justify-content:space-between;
+        }
+    }
+
+    .container-3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+    }
+
+    .container-1 div, .container-2 div, .container-3 div{
+        border:1px #ccc solid;
+        padding:10px;
+    }
+
+    .box-1{
+        flex:2;
+        order: 2;
+    }
+
+    .box-2{
+        flex:1;
+        order: 1;
+    }
+
+    .box-3{
+        flex:1;
+        order: 3;
+    }
+
+    .container-2-box{
+        flex-basis: 27%;
+    }
+
+    .container-3-box{
+        flex-basis: 40%;
+    }
+
+</style>
+
+<header>
+    <h1>Shaburov Pavel, M33071</h1>
+    <p>Posted by me:)</p>
+</header>
+
+
+<div class="container-1">
+    <div class="box-1">
+        <div class="my_strenghts">
+            <h2> <strong>My strengths </strong></h2>
+            <ul>
+                <li>speak English</li>
+                <li> <b> speak Russian</b></li>
+                <li>speak German</li>
+                <li><i> know some Hebrew </i></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="box-2">
+        <h3>My academic strengths</h3>
+        <ol>
+            <li>Data Bases</li>
+            <li>Linux</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li><ins>Python</ins></li>
+            <li>C#</li>
+            <li><del>UML</del></li>
+        </ol>
+    </div>
+
+    <div class="box-3">
+        <dl>
+            <dt>My language strengths explanation</dt>
+            <dd>I was born in St Petersburg, Russia and at the age of 2 years old moved to Germany. There I lived for 10 years. At the age of 12 I moved to the United States. At the age of 18 i returned to St Petersburg to persue studies at ITMO University</dd>
+            <dt>My academic strengths explanation</dt>
+            <dd>So far I have exceeded in subjects such as Data Bases, Linux, C++ and C as well as Java, Python, and C#. Currently my strongest language is Python</dd>
+        </dl>
+    </div>
+</div>
+
+<div class="container-2">
+    <div class="container-2-box">
+        <img src="mountain1.jpeg" alt="mountain2">
+    </div>
+
+    <div class="container-2-box">
+        <div class="info_about_myself">
+            <section>
+                <h2>About Me</h2>
+                <p>My name is Paul Shaburov and I am an international student at ITMO University. I am a 3rd year student currently studying Web Programming</p>
+            </section>
+        </div>
+    </div>
+
+    <div class="container-2-box">
+        <img src="mountain.jpeg" alt="mountain1">
+    </div>
+</div>
+
+<div class="container-3">
+    <div class="container-3-box">
+        <h3> Box one (1/3)</h3>
+        <p> some random text that belongs to box 1</p>
+    </div>
+
+    <div class="container-3-box">
+        <h3> Box two (2/3)</h3>
+        <p> some random text that belongs to box 2. We can really put a lot of randomness in here to make it fun</p>
+    </div>
+
+    <div class="container-3-box">
+        <h3> Box three (3/3)</h3>
+        <p> some random text that belongs to box 3. Yup, still writing a lot of nonsense but that is ok because we want to get a cool picture</p>
+    </div>
+</div>
+
+<footer>
+    <p><em>Author: Pavel Shaburov</em><br>
+        <a href="paul.shaburov@gmail.com">paul.shaburov@gmail.com</a></p>
+</footer>
+
+
+
+
+</body>
+<script src="Lab5.js"></script>
+
+<script>
+    let x = document.getElementsByTagName("p");
+    console.log(x)
+
+    function tag_counter() {
+        let tagsCount = {}
+        for (const tag of document.body.getElementsByTagName('*')) {
+            if (tag.tagName in tagsCount) tagsCount[tag.tagName] += 1
+            else tagsCount[tag.tagName] = 1
+        }
+
+        console.log(tagsCount);
+    }
+    tag_counter()
+</script>
+</html>
